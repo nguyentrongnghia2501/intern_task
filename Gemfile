@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'activeadmin'
+gem 'inherited_resources',github:'activeadmin/inherited_resources'
+gem 'devise'
+gem 'sass-rails'
