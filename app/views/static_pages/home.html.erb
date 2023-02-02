@@ -1,0 +1,7 @@
+<h3><%= button_to "Log out", destroy_user_session_path, method: :delete %></h3>
+<br>
+<ul class="users" style="color:black;" >
+	<% @user.each do |user| %>
+		<%= render "shared/list_user" , user: user %>
+	<% end %>
+</ul>
