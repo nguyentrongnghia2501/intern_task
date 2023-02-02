@@ -1,0 +1,14 @@
+<div class="chat-zone">
+  <% Chat.all.each do |chat| %>
+    <%= render "chats/compon/messages"%>
+  <% end %>
+</div>
+
+<br>
+<%= form_with url: :chats, local: false  do |form| %>
+  <%= form.text_field :message, class: "form-control", placeholder:"send"%>
+  <%= button_tag class:"btn btn-out-line-danger",type: "submit" do %>
+    send
+  <% end %>
+<% end %>
+
